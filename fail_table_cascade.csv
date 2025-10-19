@@ -1,0 +1,17 @@
+command,clarification,output,failure
+Pick up the wrench farthest away.,,Pick up the hex_key,Incorrect tool identified
+"Hi, pick up the wrench closest to me on my right.",,"Hi, pick up the screwdriver.",Incorrect tool identified
+Pick the wrench farthest away from me.,,Pick the screwdriver.,Incorrect tool identified
+Narrow  the search to only screwdrivers. Find the only screwdriver in the pile next to the large wrench. Pick it up.,,,Stuck in relative position loop
+I need you to carefully hand over the tool that has a black handle,,I need you to carefully hand over the hex_key.,
+Please pass the saw,screwdriver,,Invalid Resolver classed saw as action
+Bring me the wrench set,small wrench,,wrench set' classified as invalid command -> unable to resolve
+Please pass that one wrench over there,large wrench,,RETEST
+Would you mind returning the second largest tool,,Would you mind returning the hex_key,
+"Please return the very same tool that I used, the final item I interacted with",Yes,"Please return the very same tool that I used, the final item I interacted with the screwdriver",Should this be Pass? THe command isn't simplified
+Would you kindly deliver the tool specifically required to perform the operations in step four of this process,,Would you kindly deliver the tool specifically required to perform the operations in hex_key of this process,Rewritten command is incorrect
+"I would like you to return the tool that was used in completing step two, the previous step",,I would like you to return the tool that was used in completing large_wrench,Rewritten command is incorrect
+"Okay, I'm finished with it, Quickly put away the yellow tool",,,Unable to produce an executable command for this ambiguity combination
+I need the black tool further left this time,,,Unable to produce an executable command for this ambiguity combination
+I'm done with that small tool I used for step four so put it away,,I'm done with that small tool I used for hex_key so put it away,Rewritten command is incorrect
+Please return that drill close to me. ,,,"Classed drill as an action, unable to resolve"

@@ -1,0 +1,13 @@
+command,clarification,output,failure
+Pick the wrench farthest away from me.,,hand the screwdriver,"farthest tool selected ignoring ""wrench"" from the input command"
+Put back the mallet,the screwdriver,return the large_wrench,no clarification is called confident about large_wrench
+Bring me the wrench set,small wrench,deliver the large_wrench,no clarification is called confident about large_wrench
+Return the wrench,small wrench,return the large_wrench,no clarification is called confident about large_wrench
+"Ok, I'm finished with the wrench. Put it back.",small wrench,return the large_wrench,no clarification is called confident about large_wrench
+"Hi, pass the largest tool",,pass the large_wrench,node only ranking in three categorise large and hex_key are all in large category
+Would you mind returning the second largest tool,,return the hex_key,node only ranking in three categorise large and hex_key are all in large category
+Please pass the tool for tightening bolts,small wrench,pass the large_wrench,no clarification is called confident about large_wrench
+Return the tightening tool,small wrench,return the large_wrench,no clarification is called confident about large_wrench
+"I’ve completed the last step, return the tool",,return the screwdriver,last step should be resolved as step not historical
+"Okay, I'm finished with it, Quickly put away the yellow tool",,put away the screwdriver,screwdriver is correct but speed will not change
+I need the black tool further left this time,,pass the large_wrench,large wrench is correct but the hand over position will not be further left
